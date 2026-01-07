@@ -36,7 +36,8 @@ const Consultation: React.FC = () => {
               ].map((item, idx) => (
                 <div key={idx} className="flex items-start space-x-4">
                   <div className="p-3 bg-brand-light text-brand rounded-xl">
-                    {React.cloneElement(item.icon as React.ReactElement, { size: 24 })}
+                    {/* Fix: Explicitly cast to React.ReactElement<any> to resolve TypeScript error where 'size' is not recognized on the base ReactElement type */}
+                    {React.cloneElement(item.icon as React.ReactElement<any>, { size: 24 })}
                   </div>
                   <div>
                     <h3 className="font-bold text-lg text-charcoal">{item.title}</h3>

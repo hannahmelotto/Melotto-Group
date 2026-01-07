@@ -1,18 +1,17 @@
-
 import React from 'react';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
-import Layout from './components/Layout';
-import Home from './pages/Home';
-import Team from './pages/Team';
-import Services from './pages/Services';
-import CaseStudies from './pages/CaseStudies';
-import CaseStudyDetail from './pages/CaseStudyDetail';
-import Pricing from './pages/Pricing';
-import Consultation from './pages/Consultation';
-import Portal from './pages/Portal';
-import ForgotPassword from './pages/ForgotPassword';
-import Legal from './pages/Legal';
-import ScrollToTop from './components/ScrollToTop';
+import Layout from './components/Layout.tsx';
+import Home from './pages/Home.tsx';
+import Team from './pages/Team.tsx';
+import Services from './pages/Services.tsx';
+import CaseStudies from './pages/CaseStudies.tsx';
+import CaseStudyDetail from './pages/CaseStudyDetail.tsx';
+import Pricing from './pages/Pricing.tsx';
+import Consultation from './pages/Consultation.tsx';
+import Portal from './pages/Portal.tsx';
+import ForgotPassword from './pages/ForgotPassword.tsx';
+import Legal from './pages/Legal.tsx';
+import ScrollToTop from './components/ScrollToTop.tsx';
 
 const App: React.FC = () => {
   return (

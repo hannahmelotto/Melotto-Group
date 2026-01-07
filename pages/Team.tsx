@@ -1,7 +1,6 @@
-
 import React from 'react';
 import { GraduationCap, Microscope, PenTool, CheckCircle2, UserCheck, ShieldCheck } from 'lucide-react';
-import MockUiSnippet from '../components/MockUiSnippet';
+import MockUiSnippet from '../components/MockUiSnippet.tsx';
 
 const Team: React.FC = () => {
   const teamPillars = [

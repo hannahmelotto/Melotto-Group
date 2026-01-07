@@ -1,9 +1,8 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, CheckCircle2, UserCheck, ShieldCheck, Search, Globe, MessageSquare, Sparkles } from 'lucide-react';
-import AntiAiBadge from '../components/AntiAiBadge';
-import MockUiSnippet from '../components/MockUiSnippet';
+import AntiAiBadge from '../components/AntiAiBadge.tsx';
+import MockUiSnippet from '../components/MockUiSnippet.tsx';
 
 const Home: React.FC = () => {
   return (

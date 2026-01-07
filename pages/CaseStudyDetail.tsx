@@ -1,8 +1,7 @@
-
 import React from 'react';
 import { useParams, Link, Navigate } from 'react-router-dom';
 import { ArrowLeft, CheckCircle2 } from 'lucide-react';
-import { CASE_STUDIES_DATA } from './CaseStudies';
+import { CASE_STUDIES_DATA } from './CaseStudies.tsx';
 
 const CaseStudyDetail: React.FC = () => {
   const { slug } = useParams();
