@@ -1,0 +1,17 @@
+<svg width="512" height="512" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>Melotto Group Icon</title>
+  <!-- Squircle Background with standard RX for PWA masking -->
+  <rect width="512" height="512" rx="120" ry="120" fill="#115cef"/>
+  
+  <!-- Stylized Serif "M" Path -->
+  <path d="M120 380V120H155L256 300L357 120H392V380H357V160L256 340L155 160V380H120Z" fill="#FFFFFF"/>
+  
+  <!-- Subtle overlay gradient for depth -->
+  <defs>
+    <linearGradient id="icon_gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:rgb(255,255,255);stop-opacity:0.1" />
+      <stop offset="100%" style="stop-color:rgb(0,0,0);stop-opacity:0.1" />
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="120" ry="120" fill="url(#icon_gradient)" style="mix-blend-mode:overlay; pointer-events:none;"/>
+</svg>
