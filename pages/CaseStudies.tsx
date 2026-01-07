@@ -2,6 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Lock } from 'lucide-react';
+import SEO from '../components/SEO.tsx';
 
 export const CASE_STUDIES_DATA = {
   "argus-research": {
@@ -89,6 +90,10 @@ export const CASE_STUDIES_DATA = {
 const CaseStudies: React.FC = () => {
   return (
     <div className="py-24 bg-white">
+      <SEO 
+        title="Success Stories & Case Studies" 
+        description="Explore the impact of human-led content strategy. Our case studies showcase successful projects for equity research, community banking, and narrative-driven media." 
+      />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mb-24">
           <div className="inline-block mb-6">

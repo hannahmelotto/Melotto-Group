@@ -1,6 +1,7 @@
 
 import React, { useEffect } from 'react';
 import { Clock, MessageSquare, ShieldCheck } from 'lucide-react';
+import SEO from '../components/SEO.tsx';
 
 const Consultation: React.FC = () => {
   useEffect(() => {
@@ -20,6 +21,10 @@ const Consultation: React.FC = () => {
 
   return (
     <div className="py-24 bg-white">
+      <SEO 
+        title="Book a Strategic Consultation" 
+        description="Schedule a 30-minute discovery session with the Melotto Group leadership team. Discuss your organization's messaging goals and project requirements in full confidentiality." 
+      />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-20 items-start">
           <div className="lg:sticky lg:top-32">

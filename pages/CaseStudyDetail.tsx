@@ -1,7 +1,9 @@
+
 import React from 'react';
 import { useParams, Link, Navigate } from 'react-router-dom';
 import { ArrowLeft, CheckCircle2 } from 'lucide-react';
 import { CASE_STUDIES_DATA } from './CaseStudies.tsx';
+import SEO from '../components/SEO.tsx';
 
 const CaseStudyDetail: React.FC = () => {
   const { slug } = useParams();
@@ -13,6 +15,10 @@ const CaseStudyDetail: React.FC = () => {
 
   return (
     <div className="bg-white">
+      <SEO 
+        title={`${data.company} Case Study`} 
+        description={`${data.summary} See how Melotto Group delivered high-impact ${data.type.toLowerCase()} for ${data.company} in the ${data.industry.toLowerCase()} industry.`} 
+      />
       {/* Hero Header */}
       <section className="bg-gray-50 py-32 border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

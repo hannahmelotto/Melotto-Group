@@ -1,6 +1,8 @@
+
 import React from 'react';
 import { GraduationCap, Microscope, PenTool, CheckCircle2, UserCheck, ShieldCheck } from 'lucide-react';
 import MockUiSnippet from '../components/MockUiSnippet.tsx';
+import SEO from '../components/SEO.tsx';
 
 const Team: React.FC = () => {
   const teamPillars = [
@@ -32,6 +34,10 @@ const Team: React.FC = () => {
 
   return (
     <div className="py-24 bg-white overflow-hidden">
+      <SEO 
+        title="Our Team of Experts" 
+        description="Meet the human experts at Melotto Group. Our team consists of advanced researchers and strategic writers with backgrounds in life sciences, law, and economics." 
+      />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Hero Section */}

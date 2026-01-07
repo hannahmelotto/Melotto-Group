@@ -1,5 +1,7 @@
+
 import React from 'react';
 import { PenTool, Search, BookOpen, Microscope, ShieldCheck, Database, Check, GraduationCap, UserCheck, Lock } from 'lucide-react';
+import SEO from '../components/SEO.tsx';
 
 const Services: React.FC = () => {
   const serviceCategories = [
@@ -70,6 +72,10 @@ const Services: React.FC = () => {
 
   return (
     <div className="py-24 bg-white">
+      <SEO 
+        title="Professional Writing & Research Services" 
+        description="Explore our specialized services: Creative & Marketing strategy, Scientific & Clinical reporting, Technical white papers, and Executive Thought Leadership." 
+      />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-20">
           <div className="flex justify-center mb-6">

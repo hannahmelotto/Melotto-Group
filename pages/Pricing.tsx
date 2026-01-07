@@ -1,6 +1,8 @@
+
 import React from 'react';
 import { Check, Info, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import SEO from '../components/SEO.tsx';
 
 const Pricing: React.FC = () => {
   const models = [
@@ -23,6 +25,10 @@ const Pricing: React.FC = () => {
 
   return (
     <div className="py-24 bg-white">
+      <SEO 
+        title="Pricing Philosophy & Investment" 
+        description="Learn about our custom pricing models for professional writing and research. We offer per-project, monthly retainer, and enterprise solutions tailored to your needs." 
+      />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mb-20">
           <div className="inline-block mb-6">

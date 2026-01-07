@@ -1,12 +1,18 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, CheckCircle2, UserCheck, ShieldCheck, Search, Globe, MessageSquare, Sparkles } from 'lucide-react';
 import AntiAiBadge from '../components/AntiAiBadge.tsx';
 import MockUiSnippet from '../components/MockUiSnippet.tsx';
+import SEO from '../components/SEO.tsx';
 
 const Home: React.FC = () => {
   return (
     <div className="overflow-hidden">
+      <SEO 
+        title="Human-First Professional Writing & Research" 
+        description="High-Impact Content. Human Intelligence. Melotto Group provides elite writing and research services for organizations that refuse to use AI algorithms." 
+      />
       {/* Hero Section */}
       <section className="relative pt-12 pb-16 md:pt-20 md:pb-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
+import SEO from '../components/SEO.tsx';
 
 interface PortalProps {
   isStaff?: boolean;
@@ -22,6 +23,10 @@ const Portal: React.FC<PortalProps> = ({ isStaff = false }) => {
 
   return (
     <div className="min-h-[80vh] flex flex-col items-center justify-center py-12 bg-white px-4">
+      <SEO 
+        title={isStaff ? "Staff Workspace Login" : "Client Project Portal"} 
+        description="Secure login for Melotto Group clients and staff. Manage your active content projects, review drafts, and collaborate with your specialist." 
+      />
       <div className="w-full max-w-[400px]">
         
         <div className="text-center mb-12">

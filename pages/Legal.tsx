@@ -1,5 +1,6 @@
 
 import React from 'react';
+import SEO from '../components/SEO.tsx';
 
 interface LegalProps {
   type: 'privacy' | 'terms';
@@ -11,6 +12,7 @@ const Legal: React.FC<LegalProps> = ({ type }) => {
       title: "Privacy Policy",
       subtitle: "How we protect and respect your data.",
       date: "Last Updated: September 2024",
+      description: "Melotto Group's commitment to your privacy. We guarantee that your proprietary data is never used to train AI models.",
       body: (
         <div className="space-y-10">
           <section>
@@ -97,6 +99,7 @@ const Legal: React.FC<LegalProps> = ({ type }) => {
       title: "Terms of Service",
       subtitle: "The legal framework for our partnership.",
       date: "Last Updated: September 2024",
+      description: "The official terms and conditions for engaging Melotto Group services. Understanding our human-led delivery model and legal framework.",
       body: (
         <div className="space-y-10">
           <section>
@@ -184,6 +187,10 @@ const Legal: React.FC<LegalProps> = ({ type }) => {
 
   return (
     <div className="py-24 bg-white">
+      <SEO 
+        title={current.title} 
+        description={current.description} 
+      />
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <header className="mb-16 border-b border-gray-100 pb-12">
           <h1 className="text-5xl font-serif font-bold text-charcoal mb-4">{current.title}</h1>
